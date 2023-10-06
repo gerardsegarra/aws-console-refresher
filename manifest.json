@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "AwsConsoleRefresher",
+    "version": "0.1.0",
+  
+    "description": "Clicks the refresh button in aws console automatically ever 15 seconds.",
+  
+    "icons": {
+      "48": "icons/refresh-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.console.aws.amazon.com/*"],
+        "js": ["refresh.js"]
+      }
+    ]
+  }
+  
